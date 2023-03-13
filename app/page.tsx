@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <main className="">
-      <h1 className="text-extrabold">Hey there</h1>
+    <main className="bg-slate-400">
+      <h1 className="bg-black font-extrabold">Hey there</h1>
     </main>
   )
 }
