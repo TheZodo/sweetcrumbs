@@ -7,7 +7,7 @@ export default function Home() {
         </h1>
         <div></div>
       </nav>
-      <div className="min-w-full display flex items-center flex-col pt-20">
+      <div className="min-w-full flex items-center flex-col pt-20">
         <span className="font-extrabold text-6xl">For All Those</span> <br />
         <span className="font-extrabold text-6xl text-transparent bg-clip-text bg-gradient-to-r from-[#EFB6AE] to-[#4A1823]">
           SWEET
@@ -15,6 +15,11 @@ export default function Home() {
         <br />
         <span className="font-extrabold text-6xl">Moments</span>
       </div>
+      <section className="flex flex-col pt-14">
+        <button className=" bg-[#4A1823]">Build Your Cake</button>
+        <span className=" flex flex-col items-center">or</span>
+        <button>Choose a Popolar Cake</button>
+      </section>
     </main>
   )
 }
