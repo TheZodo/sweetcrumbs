@@ -19,8 +19,10 @@ export default function Home() {
         <button className=" bg-[#4A1823] px-4 py-2 rounded-lg w-fit text-[#EFB6AE]">
           Build Your Cake
         </button>
-        <span className=" flex flex-col items-center">or</span>
-        <button>Choose a Popolar Cake</button>
+        <span className=" flex flex-col items-center p-4">or</span>
+        <button className=" bg-[#4A1823] px-4 py-2 rounded-lg w-fit text-[#EFB6AE]">
+          Choose a Popolar Cake
+        </button>
       </section>
     </main>
   )
