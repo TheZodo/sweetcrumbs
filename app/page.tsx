@@ -15,6 +15,13 @@ export default function Home() {
         <br />
         <span className="font-extrabold text-6xl">Moments</span>
       </div>
+      <div>
+        <p className=" pt-16 px-3 font-bold">
+          Get your cake delivered to your doorstep within lusaka. We have a wide
+          range of cakes, from birthday cakes to wedding cakes. We also have a
+          wide range of flavors to choose from.
+        </p>
+      </div>
       <section className="flex flex-col items-center pt-14">
         <button className=" bg-[#4A1823] px-4 py-2 rounded-lg w-fit text-[#EFB6AE]">
           Build Your Cake
