@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import logo from '../assets/logo.jpg'
+import logo from '../assets/logo-final.jpg'
 export default function Home() {
   return (
     <main className="bg-[#FAFAFA] min-h-screen p-6">
@@ -10,7 +10,7 @@ export default function Home() {
         <Image
           src={logo}
           alt={'SweetCrumbs Logo'}
-          width={80}
+          width={60}
           className=" rounded-full"
         />
         <div></div>
