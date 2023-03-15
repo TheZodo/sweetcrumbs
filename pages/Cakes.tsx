@@ -4,8 +4,10 @@ import CakeSegment from '@/components/CakeSegment'
 export default function Cakes() {
   return (
     <>
-      <div className="bg-[#EFB6AE] min-w-full ">
-        <p>This is where we test things</p>
+      <div className="bg-[#f7e0dd] min-w-full min-h-screen pb-10">
+        <p className="p-14 font-black text-3xl text-[#4A1823]">
+          Some of our recent cakes
+        </p>
         <CakeSegment />
       </div>
     </>

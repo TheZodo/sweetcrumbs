@@ -1,22 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
-import logo from '../assets/logo-final.jpg'
+import Navbar from '@/components/Navbar'
 
 export default function Hero() {
   return (
     <div className="bg-[url('../assets/background-purple-cake-image.jpg')] min-h-screen p-6">
-      <nav className="flex content-between justify-between">
-        {/* <h1 className="font-extrabold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#EFB6AE] to-[#4A1823] w-fit">
-          SWEET
-        </h1> */}
-        <Image
-          src={logo}
-          alt={'SweetCrumbs Logo'}
-          width={60}
-          className=" rounded-full"
-        />
-        <div></div>
-      </nav>
+      <Navbar />
       <div className="min-w-full flex items-center flex-col pt-20">
         <span className="font-extrabold text-6xl">For All Those</span> <br />
         <span className="font-extrabold text-6xl text-transparent bg-clip-text bg-gradient-to-r from-[#EFB6AE] to-[#4A1823]">
