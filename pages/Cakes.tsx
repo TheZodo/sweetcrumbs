@@ -5,8 +5,7 @@ export default function Cakes() {
   return (
     <>
       <div className="bg-[#EFB6AE] min-w-full ">
-        <CakeSegment />
-        <CakeSegment />
+        <p>This is where we test things</p>
         <CakeSegment />
       </div>
     </>
