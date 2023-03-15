@@ -10,3 +10,9 @@ function onPublicAccessOnly() {
 if (!projectId || !dataset) {
   throw new Error('Missing projectId or dataset. Check your sanity.json')
 }
+
+export const usePreview = definePreview({
+  projectId,
+  dataset,
+  onPublicAccessOnly,
+})
