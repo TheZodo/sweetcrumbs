@@ -13,6 +13,7 @@ export default defineConfig({
 
   projectId: 'tyerv91u',
   dataset: 'production',
+  apiVersion: '2023-03-14',
 
   plugins: [deskTool(), visionTool()],
 

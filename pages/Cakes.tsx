@@ -6,7 +6,7 @@ export default function Cakes() {
     <>
       <div className="bg-[#f7e0dd] min-w-full min-h-screen pb-10">
         <p className="p-14 font-black text-3xl text-[#4A1823]">
-          Some of our recent cakes
+          Our recent cakes
         </p>
         <CakeSegment />
       </div>

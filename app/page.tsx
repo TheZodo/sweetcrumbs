@@ -2,9 +2,8 @@ import Cakes from '@/pages/Cakes'
 import Hero from '@/pages/Hero'
 export default function Home() {
   return (
-    <main>
+    <main className="scrollbar-hide">
       <Hero />
-      {/* <CakeSegment /> */}
       <Cakes />
     </main>
   )
