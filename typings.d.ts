@@ -9,7 +9,7 @@ type Base = {
 interface Post extends Base {
   title: string
   slug: Slug
-  body: Block[]
+  body: string
   mainImage: Image
   description: string
   author: Author

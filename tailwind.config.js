@@ -10,9 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        signika: ['Signika', 'sans-serif'],
-      },
+      // fontFamily: {
+      //   signika: ['Signika', 'sans-serif'],
+      // },
     },
   },
   plugins: [require('tailwind-scrollbar-hide')],

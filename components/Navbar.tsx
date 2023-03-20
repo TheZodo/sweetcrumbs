@@ -5,7 +5,7 @@ import logo from '../assets/logo-final.jpg'
 export default function Navbar() {
   return (
     <div>
-      <nav className="flex content-between justify-between fixed bg-white min-w-[90%] rounded-lg shadow-lg p-2">
+      <nav className="flex content-between justify-between bg-white min-w-[90%] rounded-lg shadow-lg p-2">
         {/* <h1 className="font-extrabold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#EFB6AE] to-[#4A1823] w-fit">
           SWEET
         </h1> */}

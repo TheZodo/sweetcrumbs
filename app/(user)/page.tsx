@@ -10,7 +10,7 @@ const query = groq`
   ...,
 author->,
 categories[]->
-} | order(_createdAt desc)`
+} | order(_createdAt asc)`
 
 export default async function Home() {
   if (previewData()) {
@@ -31,7 +31,7 @@ export default async function Home() {
   return (
     <main className="scrollbar-hide">
       <Cakelist posts={posts} />
-      <Cakes />
+      {/* <Cakes /> */}
     </main>
   )
 }
