@@ -30,3 +30,23 @@ interface Slug {
   _type: 'slug'
   current: string
 }
+
+interface Block {
+  _type: 'block'
+  children: Span[]
+  markDefs: any[]
+  _key: string
+  style: 'normal' | 'h1' | 'h2' | 'h3' | 'h4' | 'blockquote'
+}
+
+interface Span {
+  _type: 'span'
+  text: string
+  marks: string[]
+  _key: string
+}
+
+interface Category extends Base {
+  title: string
+  description: string
+}
