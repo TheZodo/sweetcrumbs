@@ -16,6 +16,8 @@ export default function CakeList({ posts }: Props) {
         {posts.map((post) => (
           <div className="flex flex-col items-center  pb-4">
             <Image
+              //how to add width to this request?
+
               src={urlFor(post.mainImage).url()}
               alt="Tks Cakes"
               className=" max-w-[80%] rounded-md shadow-lg"
