@@ -13,7 +13,17 @@ categories[]->
 
 export default async function Home() {
   if (previewData()) {
-    return <>previewData</>
+    return (
+      <PreviewSuspense
+        fallback={
+          <div role="status">
+            <div>Loading...</div>
+          </div>
+        }
+      >
+        <h1>lessonz</h1>
+      </PreviewSuspense>
+    )
   }
 
   const posts = await client.fetch(query)
