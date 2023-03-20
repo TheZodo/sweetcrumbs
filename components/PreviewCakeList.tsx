@@ -1,7 +1,7 @@
 'use client'
 
 import { usePreview } from '@/lib/sanity.preview'
-import BlogList from './Bloglist'
+import CakeList from './CakeList'
 type Props = {
   query: string
 }
@@ -9,5 +9,5 @@ type Props = {
 export default function PreviewCakeList({ query }: Props) {
   const posts = usePreview(null, query)
 
-  return <BlogList posts={posts} />
+  return <CakeList posts={posts} />
 }

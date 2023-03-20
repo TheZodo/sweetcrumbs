@@ -1,4 +1,4 @@
-import Cakelist from '@/components/Cakelist'
+import Cakelist from '@/components/CakeList'
 import { previewData } from 'next/headers'
 import Cakes from '@/pages/Cakes'
 import { groq } from 'next-sanity'

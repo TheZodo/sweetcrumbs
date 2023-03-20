@@ -4,6 +4,6 @@ type Props = {
   posts: Post[]
 }
 
-export default function Cakelist({ posts }: Props) {
+export default function CakeList({ posts }: Props) {
   return <div>Cakelist</div>
 }
