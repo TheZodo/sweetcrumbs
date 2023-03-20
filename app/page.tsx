@@ -30,7 +30,7 @@ export default async function Home() {
   const posts = await client.fetch(query)
   return (
     <main className="scrollbar-hide">
-      {/* <Cakelist /> */}
+      <Cakelist posts={posts} />
       <Cakes />
     </main>
   )
