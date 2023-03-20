@@ -35,11 +35,10 @@ export default function CakeList({ posts }: Props) {
                   {post.title}
                 </p>
                 <p className="pb-7">{post.body}</p>
-                <p className="absolute bottom-3 left-1/3">
-                  {format(parseISO(post._createdAt), 'dd/MMMM/yyyy')}
+                <p className="absolute bottom-3 left-1/3 font-semibold">
+                  {format(parseISO(post.publishedAt), 'dd/MMMM/yyyy')}
                 </p>
               </div>
-              {/* <div className="p-4 rounded-b-md z-100 bg-[#000000]"></div> */}
             </div>
           ))}
         </div>

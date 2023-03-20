@@ -14,6 +14,7 @@ interface Post extends Base {
   description: string
   author: Author
   categories: Category[]
+  publishedAt: string
 }
 
 interface Image {
