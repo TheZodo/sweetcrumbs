@@ -3,6 +3,7 @@ import { Signika } from 'next/font/google'
 import '../globals.css'
 
 const signika = Signika({
+  weight: ['300', '400', '500', '600', '700'],
   subsets: ['latin'],
   display: 'swap',
 })

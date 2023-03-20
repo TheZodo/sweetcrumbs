@@ -1,5 +1,7 @@
 import urlFor from '@/lib/urlFor'
 import Image from 'next/image'
+import format from 'date-fns/format'
+import parseISO from 'date-fns/parseISO'
 
 type Props = {
   posts: Post[]
@@ -10,7 +12,7 @@ export default function CakeList({ posts }: Props) {
   return (
     <div>
       <div className="bg-[#f7e0dd] min-w-full min-h-screen pb-10 scrollbar-none overflow-hidden">
-        <p className="p-14 font-black text-3xl text-[#4A1823] absolute">
+        <p className="p-14 font-bold text-3xl text-[#4A1823] absolute">
           OUR{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#EFB6AE] to-[#4A1823]">
             CAKES
@@ -32,7 +34,10 @@ export default function CakeList({ posts }: Props) {
                 <p className=" max-w-[80%] min-w-full bg-[#4A1823] text-white text-center font-black text-xl pb-1">
                   {post.title}
                 </p>
-                <p>{post.body}</p>
+                <p className="pb-7">{post.body}</p>
+                <p className="absolute bottom-3 left-1/3">
+                  {format(parseISO(post._createdAt), 'dd/MMMM/yyyy')}
+                </p>
               </div>
               {/* <div className="p-4 rounded-b-md z-100 bg-[#000000]"></div> */}
             </div>

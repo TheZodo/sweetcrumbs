@@ -7,7 +7,7 @@ export default function Hero() {
     <div className="bg-[url('../assets/background-purple-cake-image.jpg')] min-h-screen p-6">
       <Navbar />
       <div className="min-w-full flex items-center flex-col pt-20">
-        <span className="font-bold text-5xl">For All Those</span> <br />
+        <span className="font-[700] text-5xl">For All Those</span> <br />
         <span className="font-black text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#EFB6AE] to-[#4A1823]">
           SWEET
         </span>
