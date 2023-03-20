@@ -8,6 +8,6 @@ type Props = {
 
 export default function PreviewCakeList({ query }: Props) {
   const posts = usePreview(null, query)
-  console.log('loading posys...')
+
   return <BlogList posts={posts} />
 }

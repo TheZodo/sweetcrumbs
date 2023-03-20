@@ -4,6 +4,7 @@ import Cakes from '@/pages/Cakes'
 import { groq } from 'next-sanity'
 import { client } from '@/lib/sanity.client'
 import PreviewSuspense from '@/components/PreviewSuspense'
+import PreviewCakeList from '@/components/PreviewCakeList'
 const query = groq`
 *[_type == "post"]{
   ...,
@@ -21,7 +22,7 @@ export default async function Home() {
           </div>
         }
       >
-        <h1>lessonz</h1>
+        <PreviewCakeList query={query} />
       </PreviewSuspense>
     )
   }
