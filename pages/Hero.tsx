@@ -1,6 +1,7 @@
+'use client'
 import React from 'react'
-import Image from 'next/image'
 import Navbar from '@/components/Navbar'
+import { TextLoop } from 'react-text-loop-next'
 
 export default function Hero() {
   return (
@@ -8,9 +9,30 @@ export default function Hero() {
       <Navbar />
       <div className="min-w-full flex items-center flex-col pt-20">
         <span className="font-[700] text-5xl">For All Those</span> <br />
-        <span className="font-black text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#EFB6AE] to-[#4A1823]">
-          SWEET
-        </span>
+        <TextLoop springConfig={{ stiffness: 180, damping: 8 }}>
+          <span
+            key={2}
+            className="font-black text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#EFB6AE] to-[#4A1823]"
+          >
+            YUMMY
+          </span>
+          <span
+            key={1}
+            className="font-black text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#EFB6AE] to-[#4A1823]"
+          >
+            SWEET
+          </span>
+          <span
+            key={3}
+            className="font-black text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#EFB6AE] to-[#4A1823]"
+          >
+            DELIGHTFUL
+          </span>
+          <span className="font-black text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#EFB6AE] to-[#4A1823]">
+            DELICIOUS
+          </span>
+        </TextLoop>
+        {''}
         <br />
         <span className="font-extrabold text-5xl">Moments</span>
       </div>
