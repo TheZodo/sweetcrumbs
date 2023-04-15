@@ -6,7 +6,6 @@ import { client } from '@/lib/sanity.client'
 import PreviewSuspense from '@/components/PreviewSuspense'
 import PreviewCakeList from '@/components/PreviewCakeList'
 import { store } from '@/store'
-import CakeBuilderCake from '@/components/CakeBuilderCake'
 const query = groq`
 *[_type == "post"]{
   ...,
@@ -33,7 +32,6 @@ export default async function Home() {
   return (
     <main className="scrollbar-hide">
       <Cakelist posts={posts} />
-      <CakeBuilderCake />
 
       {/* <Cakes /> */}
     </main>
