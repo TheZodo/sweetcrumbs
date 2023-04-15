@@ -9,6 +9,9 @@ import urlFor from '@/lib/urlFor'
 import Image from 'next/image'
 import format from 'date-fns/format'
 import parseISO from 'date-fns/parseISO'
+import Link from 'next/link'
+// import { BsWhatsapp } from 'react-icons/bs'
+import { ImWhatsapp } from 'react-icons/im'
 const query = groq`
 *[_type == "post"]{
   ...,
@@ -80,6 +83,9 @@ function CakeList({ posts }: Props) {
           ))}
         </div>
       </div>
+      <Link href="https://wa.me/260971080406">
+        <ImWhatsapp className=" text-[#4A1823] text-4xl md:text-5xl " />
+      </Link>
     </div>
   )
 }
