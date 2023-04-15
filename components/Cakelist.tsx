@@ -19,8 +19,8 @@ export default function CakeList({ posts }: Props) {
           </span>
         </p>
         <div className=" flex overflow-x-scroll scrollbar-none overflow-hidden pt-36 pr-10">
-          {posts.map((post) => (
-            <div className="flex flex-col  items-center pb-4 pl-10">
+          {posts.map((post, index) => (
+            <div key={index} className="flex flex-col  items-center pb-4 pl-10">
               <Image
                 //how to add width to this request?
 
