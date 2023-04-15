@@ -5,7 +5,7 @@ import logo from '../assets/sweet_logo.png'
 export default function Navbar() {
   return (
     <div>
-      <nav className="flex content-between justify-between bg-[#F2F3EE] rounded-lg  p-2">
+      <nav className="flex content-between justify-between bg-[#F2F3EE] rounded-lg  pt-6 pl-6">
         <Image
           src={logo}
           alt={'SweetCrumbs Logo'}
