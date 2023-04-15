@@ -1,11 +1,9 @@
 import Cakelist from '@/components/CakeList'
 import { previewData } from 'next/headers'
-import Cakes from '@/pages/Cakes'
 import { groq } from 'next-sanity'
 import { client } from '@/lib/sanity.client'
 import PreviewSuspense from '@/components/PreviewSuspense'
 import PreviewCakeList from '@/components/PreviewCakeList'
-import { store } from '@/store'
 const query = groq`
 *[_type == "post"]{
   ...,
