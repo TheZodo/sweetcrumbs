@@ -32,8 +32,6 @@ export default async function Home() {
   return (
     <main className="scrollbar-hide">
       <Cakelist posts={posts} />
-
-      {/* <Cakes /> */}
     </main>
   )
 }
