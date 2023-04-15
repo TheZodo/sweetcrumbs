@@ -4,8 +4,17 @@ import Navbar from '@/components/Navbar'
 import { TextLoop } from 'react-text-loop-next'
 import bgImage from '../assets/cake_bg.png'
 import Image from 'next/image'
+import { BsWhatsapp } from 'react-icons/Bs'
+import { motion } from 'framer-motion'
 
 export default function Hero() {
+  const bounceTransition = {
+    y: {
+      duration: 0.4,
+      yoyo: Infinity,
+      ease: 'easeOut',
+    },
+  }
   return (
     <>
       <Navbar />
@@ -58,6 +67,15 @@ export default function Hero() {
           {' '}
           SWEET CRUMBS
         </span>
+        <motion.button
+          className="fixed bottom-8 right-8 z-100"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.8 }}
+          animate={{ y: [0, -10, 0] }}
+          transition={bounceTransition}
+        >
+          <BsWhatsapp className=" text-[#4A1823] text-4xl md:text-5xl " />
+        </motion.button>
       </div>
     </>
   )
