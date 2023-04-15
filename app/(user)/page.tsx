@@ -13,6 +13,7 @@ import Link from 'next/link'
 // import { BsWhatsapp } from 'react-icons/bs'
 import { ImWhatsapp } from 'react-icons/im'
 import { motion } from 'framer-motion'
+import { useIsomorphicLayoutEffect } from 'framer-motion'
 const query = groq`
 *[_type == "post"]{
   ...,
@@ -49,6 +50,10 @@ export default async function Home() {
 }
 
 function CakeList({ posts }: Props) {
+  const [isMounted, setIsMounted] = useState(false)
+  useIsomorphicLayoutEffect(() => {
+    setIsMounted(true)
+  }, [])
   const bounceTransition = {
     y: {
       duration: 0.4,
@@ -91,17 +96,25 @@ function CakeList({ posts }: Props) {
           ))}
         </div>
       </div>
-      <motion.button
+      {/* <motion.div
+        animate={{ opacity: isMounted ? 1 : 0 }}
+        transition={{ duration: 0.5 }}
         className="fixed bottom-8 right-8 z-100"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.8 }}
-        animate={{ y: [0, -10, 0] }}
-        transition={bounceTransition}
       >
-        <Link href="https://wa.me/260971080406">
-          <ImWhatsapp className=" text-[#4A1823] text-4xl md:text-5xl " />
-        </Link>
-      </motion.button>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.8 }}
+          animate={{ y: [0, -10, 0] }}
+          transition={bounceTransition}
+        > */}
+      <Link href="https://wa.me/260971080406">
+        <ImWhatsapp className="fixed bottom-8 right-8 z-100 text-[#4A1823] text-4xl md:text-5xl " />
+      </Link>
+      {/* </motion.button>
+      </motion.div> */}
     </div>
   )
+}
+function useState(arg0: boolean): [any, any] {
+  throw new Error('Function not implemented.')
 }
