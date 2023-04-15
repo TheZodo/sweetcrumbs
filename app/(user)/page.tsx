@@ -12,6 +12,7 @@ import parseISO from 'date-fns/parseISO'
 import Link from 'next/link'
 // import { BsWhatsapp } from 'react-icons/bs'
 import { ImWhatsapp } from 'react-icons/im'
+import { motion } from 'framer-motion'
 const query = groq`
 *[_type == "post"]{
   ...,
@@ -48,6 +49,13 @@ export default async function Home() {
 }
 
 function CakeList({ posts }: Props) {
+  const bounceTransition = {
+    y: {
+      duration: 0.4,
+      yoyo: Infinity,
+      ease: 'easeOut',
+    },
+  }
   console.log(posts.length)
   return (
     <div>
@@ -83,9 +91,17 @@ function CakeList({ posts }: Props) {
           ))}
         </div>
       </div>
-      <Link href="https://wa.me/260971080406">
-        <ImWhatsapp className=" text-[#4A1823] text-4xl md:text-5xl " />
-      </Link>
+      <motion.button
+        className="fixed bottom-8 right-8 z-100"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.8 }}
+        animate={{ y: [0, -10, 0] }}
+        transition={bounceTransition}
+      >
+        <Link href="https://wa.me/260971080406">
+          <ImWhatsapp className=" text-[#4A1823] text-4xl md:text-5xl " />
+        </Link>
+      </motion.button>
     </div>
   )
 }
