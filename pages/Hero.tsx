@@ -5,7 +5,7 @@ import { TextLoop } from 'react-text-loop-next'
 
 export default function Hero() {
   return (
-    <div className="bg-[url('../assets/background-purple-cake-image.jpg')] min-h-screen p-6">
+    <div className="bg-[] min-h-screen p-6">
       <Navbar />
       <div className="min-w-full flex items-center flex-col pt-20">
         <span className="font-[700] text-5xl">For All Those</span> <br />
