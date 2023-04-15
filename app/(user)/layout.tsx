@@ -9,7 +9,8 @@ const signika = Signika({
 })
 export const metadata = {
   title: 'Sweet Crumbs',
-  description: 'We make ca .Get your cake in lusaka from us.',
+  description:
+    'We make cakes and fine treats .Get your cake in lusaka from us.',
 }
 
 export default function RootLayout({
