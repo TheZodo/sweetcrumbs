@@ -6,6 +6,7 @@ import bgImage from '../assets/cake_bg.png'
 import Image from 'next/image'
 import { BsWhatsapp } from 'react-icons/Bs'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 export default function Hero() {
   const bounceTransition = {
@@ -74,7 +75,9 @@ export default function Hero() {
           animate={{ y: [0, -10, 0] }}
           transition={bounceTransition}
         >
-          <BsWhatsapp className=" text-[#4A1823] text-4xl md:text-5xl " />
+          <Link href="https://wa.me/260971080406">
+            <BsWhatsapp className=" text-[#4A1823] text-4xl md:text-5xl " />
+          </Link>
         </motion.button>
       </div>
     </>
