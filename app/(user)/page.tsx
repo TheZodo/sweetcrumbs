@@ -12,8 +12,8 @@ import parseISO from 'date-fns/parseISO'
 import Link from 'next/link'
 // import { BsWhatsapp } from 'react-icons/bs'
 import { ImWhatsapp } from 'react-icons/im'
-import { motion } from 'framer-motion'
-import { useIsomorphicLayoutEffect } from 'framer-motion'
+// import { motion } from 'framer-motion'
+// import { useIsomorphicLayoutEffect } from 'framer-motion'
 const query = groq`
 *[_type == "post"]{
   ...,
@@ -50,10 +50,10 @@ export default async function Home() {
 }
 
 function CakeList({ posts }: Props) {
-  const [isMounted, setIsMounted] = useState(false)
-  useIsomorphicLayoutEffect(() => {
-    setIsMounted(true)
-  }, [])
+  // const [isMounted, setIsMounted] = useState(false)
+  // useIsomorphicLayoutEffect(() => {
+  //   setIsMounted(true)
+  // }, [])
   const bounceTransition = {
     y: {
       duration: 0.4,
@@ -115,6 +115,6 @@ function CakeList({ posts }: Props) {
     </div>
   )
 }
-function useState(arg0: boolean): [any, any] {
-  throw new Error('Function not implemented.')
-}
+// function useState(arg0: boolean): [any, any] {
+//   throw new Error('Function not implemented.')
+// }
